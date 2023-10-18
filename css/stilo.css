@@ -1,0 +1,73 @@
+ /* Estilos CSS para el formulario */
+ body {
+    font-family: Arial, sans-serif;
+  }
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  body {
+    background-color: #333; /* Fondo oscuro */
+    color: #000000; /* Texto blanco */
+    font-family: Arial, sans-serif;
+    font-size: 120%;
+    text-align: justify; /* Centrar contenido */
+    padding: 20px;
+  }
+
+  h1 {
+    color: #00ccff; /* Color de encabezado */
+  }
+
+  form {
+    background-color: #777777; /* Fondo del formulario */
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra del formulario */
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input[type="text"],
+  textarea,
+  select,
+  input[type="email"],
+  [type="date"],
+  [type="time"],
+  [type="color"] {
+    background-color: #ffffff; /* Fondo de los campos de entrada */
+    color: #fe7f00; /* Texto en campos de entrada */
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  button {
+    background-color: #01222a; /* Botón de envío */
+    color: #7cd50f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0099cc; /* Cambia de color al pasar el mouse */
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 80%; /* Tamaño de fuente al 50% en pantallas más pequeñas */
+    }
+  }
+
+  

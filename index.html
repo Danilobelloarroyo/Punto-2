@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Punto 2</title>
+    <link rel="stylesheet" href="./css/stilo.css">
+</head>
+
+<body>
+  <h1>Formulario Interactivo</h1>
+  <form>
+    <!-- Campo para ingresar números con máximo 10 caracteres -->
+    <label for="numero"><strong>Numero CC(máximo 10 caracteres):</strong></label>
+    <input type="text" id="numero" maxlength="10" pattern="[0-9]*" required><br>
+    <br>
+    <!-- Dos campos para ingresar texto con máximo 40 caracteres -->
+    <label for="texto1"><strong>Su Deseo (máximo 40 caracteres):</strong></label>
+    <input type="text" id="texto1" maxlength="40" required> <br>
+    <br>
+    <label for="texto2"><strong>Caracteristicas (máximo 40 caracteres):</strong></label>
+    <input type="text" id="texto2" maxlength="40" required><br>
+    <br>
+    <!-- Campo para ingresar texto multi línea con máximo 200 caracteres -->
+    <label for="textoMulti"><strong>Descripción breve (máximo 200 caracteres):</strong></label>
+    <textarea id="textoMulti" rows="3" maxlength="200"></textarea><br>
+    <br>
+    <!-- Campo para ingresar fecha -->
+    <label for="fecha"><strong>Fecha:</strong></label>
+    <input type="date" id="fecha"><br><br>
+    
+    <!-- Campo para ingresar hora -->
+    <label for="hora"><strong>Hora:</strong></label>
+    <input type="time" id="hora"><br><br>
+    
+    <!-- Campo que permite seleccionar una casilla -->
+    <label for="casilla"><strong>Casilla:</strong></label>
+    <input type="checkbox" id="casilla"  value="Suscribirse ">
+    <label for="opcion1">Suscribirse </label><br><br>
+    
+    <!-- Campo que permite seleccionar una de tres opciones (radio) -->
+    <label><strong>Bebida:</strong> </label>
+    <input type="radio" id="opcion1" name="opciones" value="Opción 1">
+    <label for="opcion1">Leche</label>
+    <input type="radio" id="opcion2" name="opciones" value="Opción 2">
+    <label for="opcion2">café</label>
+    <input type="radio" id="opcion3" name="opciones" value="Opción 3">
+    <label for="opcion3">Ambos</label><br><br>
+    
+    <!-- Campo para seleccionar colores -->
+    <label for="color"><strong>Color:</strong></label>
+    <input type="color" id="color"><br><br>
+    
+    <!-- Campo para ingresar email -->
+    <label for="email"><Strong>Email:</Strong></label>
+    <input type="email" id="email" required><br><br>
+    
+    <!-- Campo lista desplegable -->
+    <label for="seleccion"><strong>Su calificación ? </strong></label>
+    <select id="seleccion">
+      <option value="opcion1">1 estrella</option>
+      <option value="opcion2">2 estrellas</option>
+      <option value="opcion3">3 Estrellas</option>
+    </select><br><br>
+    
+    <!-- Campo lista desplegable que permite seleccionar varias opciones -->
+    <label for="multiSeleccion"><strong>Sexo: </strong></label>
+    <select id="multiSeleccion" multiple>
+      <option value="opcion1">Mujer</option>
+      <option value="opcion2">Hombre</option>
+      <option value="opcion3">Ninguno </option>
+    </select><br><br>
+    
+    <!-- Campo entrada de texto con autocompletado -->
+    <label for="autocomplete"><strong>Fruta Preferida:</strong></label>
+    <input type="text" id="autocomplete" list="sugerencias">
+    <datalist id="sugerencias">
+      <option value="Manzana">
+      <option value="Banana">
+      <option value="Cereza">
+      <option value="Dátil">
+      <option value="Uva">
+      <option value="Papaya">
+      <option value="Pera">
+      <option value="Melon">
+      <option value="Naranja">
+      <option value="Tomate">
+    </datalist><br><br>
+    
+    <!-- Botón para enviar el formulario -->
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
